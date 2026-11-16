@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://whattheprobefound.visionmediachannels.com/sitemap.xml
