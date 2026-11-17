@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What the Probe Found</title>
+<title>What the Probe Found · Links</title>
 <meta name="description" content="What the Probe Found explains space results from the data: Webb&#x27;s galaxies, Voyager&#x27;s last years, exoplanets, Mars. Measured vs inferred, papers named.">
 <link rel="canonical" href="https://whattheprobefound.visionmediachannels.com/">
 <meta property="og:site_name" content="What the Probe Found">
@@ -13,20 +13,66 @@
 <meta property="og:url" content="https://whattheprobefound.visionmediachannels.com/">
 <meta property="og:image" content="https://whattheprobefound.visionmediachannels.com/images/site-header.png">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="alternate" type="application/rss+xml" title="What the Probe Found" href="https://whattheprobefound.visionmediachannels.com/feed.xml">
 <link rel="icon" type="image/png" sizes="32x32" href="https://whattheprobefound.visionmediachannels.com/favicon-32.png">
-<link rel="icon" type="image/png" sizes="512x512" href="https://whattheprobefound.visionmediachannels.com/favicon-512.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&amp;family=Source+Sans+3:wght@400;700&amp;display=swap">
-<link rel="stylesheet" href="https://whattheprobefound.visionmediachannels.com/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "What the Probe Found", "url": "https://whattheprobefound.visionmediachannels.com/", "inLanguage": "en", "publisher": {"@type": "Organization", "name": "Vision Media"}}</script>
+<style>
+:root{--bg:#050A14;--bg2:#020409;--glow:#22D3EE;--glow2:#5c6066;--head:'Exo 2',Georgia,serif;--body:'Source Sans 3',system-ui,sans-serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:#fff;font:17px/1.5 var(--body);background:radial-gradient(120% 90% at 50% 0%,var(--bg) 0%,var(--bg2) 70%);overflow-x:hidden;position:relative}
+.orb{position:fixed;border-radius:50%;filter:blur(70px);opacity:.38;pointer-events:none;z-index:0;will-change:transform}
+.o1{width:46vmax;height:46vmax;background:var(--glow);top:-18vmax;left:-14vmax;animation:d1 22s ease-in-out infinite alternate}
+.o2{width:40vmax;height:40vmax;background:var(--glow2);bottom:-16vmax;right:-12vmax;animation:d2 26s ease-in-out infinite alternate}
+.o3{width:24vmax;height:24vmax;background:var(--glow);opacity:.18;top:42%;left:55%;animation:d3 30s ease-in-out infinite alternate}
+@keyframes d1{to{transform:translate(18vmax,12vmax) scale(1.2)}}
+@keyframes d2{to{transform:translate(-16vmax,-10vmax) scale(1.15)}}
+@keyframes d3{to{transform:translate(-30vmax,8vmax) scale(.8)}}
+.dots{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.14) 1px,transparent 1.5px);background-size:34px 34px;mask-image:radial-gradient(70% 60% at 50% 40%,#000,transparent);animation:drift 40s linear infinite}
+@keyframes drift{to{background-position:34px 68px}}
+main{position:relative;z-index:1;max-width:520px;margin:0 auto;padding:56px 20px 28px;text-align:center}
+.ring{width:132px;height:132px;margin:0 auto 22px;border-radius:50%;padding:4px;position:relative;
+  background:conic-gradient(from 0deg,var(--glow),transparent 30%,var(--glow2),transparent 65%,var(--glow));animation:spin 7s linear infinite;
+  opacity:0;animation:spin 7s linear infinite,pop .9s .1s cubic-bezier(.2,.9,.3,1.3) forwards}
+.ring::after{content:"";position:absolute;inset:-14px;border-radius:50%;border:2px solid var(--glow);opacity:.0;animation:pulse 3.2s 1s ease-out infinite}
+.ring img,.ring .ph{width:100%;height:100%;border-radius:50%;display:block;object-fit:cover;background:var(--bg2);animation:unspin 7s linear infinite}
+.ring .ph{display:grid;place-items:center;font:700 44px var(--head)}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes unspin{to{transform:rotate(-360deg)}}
+@keyframes pulse{0%{transform:scale(.85);opacity:.55}100%{transform:scale(1.25);opacity:0}}
+@keyframes pop{from{opacity:0;transform:scale(.6) rotate(0)}to{opacity:1}}
+h1{font:700 clamp(30px,8vw,42px)/1.1 var(--head);margin:0 0 10px;letter-spacing:.01em;
+  background:linear-gradient(100deg,#fff 20%,var(--glow) 45%,#fff 70%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shine 6s 1s ease-in-out infinite,up .8s .25s both}
+@keyframes shine{0%,100%{background-position:100% 0}50%{background-position:0 0}}
+.tag{margin:0 auto 30px;max-width:420px;color:rgba(255,255,255,.78);font-size:.98rem;animation:up .8s .4s both}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.btns{display:grid;gap:14px}
+.btn{position:relative;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px 22px;border-radius:16px;color:#fff;text-decoration:none;
+  font:700 1.08rem var(--head);background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.22);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);overflow:hidden;opacity:0;animation:up .7s calc(.55s + var(--i)*.12s) both;
+  transition:transform .25s cubic-bezier(.2,.8,.3,1.2),border-color .25s,box-shadow .25s}
+.btn:first-child{background:linear-gradient(135deg,var(--glow),color-mix(in srgb,var(--glow) 55%,var(--glow2)));border-color:transparent;color:#111;box-shadow:0 8px 30px -8px var(--glow)}
+.btn::before{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .7s}
+.btn:hover,.btn:focus-visible{transform:translateY(-4px) scale(1.02);border-color:var(--glow);box-shadow:0 14px 34px -10px var(--glow);outline:none}
+.btn:hover::before{left:130%}.btn i{font-style:normal;transition:transform .25s}.btn:hover i{transform:translateX(6px)}
+.btn:active{transform:scale(.98)}
+.btn:first-child::after{content:"";position:absolute;inset:0;border-radius:16px;box-shadow:0 0 0 0 var(--glow);animation:ping 2.6s 2s ease-out infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--glow) 60%,transparent)}70%,100%{box-shadow:0 0 0 16px transparent}}
+footer{position:relative;z-index:1;max-width:520px;margin:0 auto;padding:30px 20px 36px;text-align:center;font-size:11px;line-height:1.5;color:rgba(255,255,255,.5);animation:up 1s 1.4s both}
+footer p{margin:0 0 10px}footer a{color:rgba(255,255,255,.68);text-decoration:underline;text-underline-offset:2px}footer a:hover{color:#fff}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.btn,h1,.tag,.ring,footer{opacity:1!important}}
+</style>
 </head>
 <body>
-<header class="site"><a href="https://whattheprobefound.visionmediachannels.com/">What the Probe Found</a></header>
+<div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div><div class="dots"></div>
 <main>
-<h1>What the Probe Found</h1><p class="lede">What the Probe Found explains space results from the data: Webb&#x27;s galaxies, Voyager&#x27;s last years, exoplanets, Mars. Measured vs inferred, papers named.</p><ul class="posts"></ul>
+<div class="ring"><img src="/images/avatar.png" alt="What the Probe Found logo" width="360" height="360"></div>
+<h1>What the Probe Found</h1>
+<p class="tag">What the Probe Found explains space results from the data: Webb&#x27;s galaxies, Voyager&#x27;s last years, exoplanets, Mars. Measured vs inferred, papers named.</p>
+<nav class="btns" aria-label="Links"><a class="btn" style="--i:0" href="https://www.youtube.com/@whattheprobefound"><span>Watch on YouTube</span><i aria-hidden="true">→</i></a><a class="btn" style="--i:1" href="https://whattheprobefound.visionmediachannels.com/about/"><span>About this channel</span><i aria-hidden="true">→</i></a></nav>
 </main>
-<footer><p>Space missions read from the data releases and the papers.</p><p>What the Probe Found · <a href="https://www.youtube.com/@whattheprobefound">YouTube</a> · <a href="https://whattheprobefound.visionmediachannels.com/about/">About</a> · <a href="https://whattheprobefound.visionmediachannels.com/credits/">Credits</a> · <a href="https://whattheprobefound.visionmediachannels.com/affiliate-disclosure/">Affiliate disclosure</a> · <a href="https://whattheprobefound.visionmediachannels.com/privacy/">Privacy</a> · <a href="https://whattheprobefound.visionmediachannels.com/terms/">Terms</a> · <a href="https://whattheprobefound.visionmediachannels.com/feed.xml">RSS</a></p></footer>
+<footer>
+<p><strong>Disclosure:</strong> some links here are affiliate links (Amazon, Bookshop, Coursera, Skillshare, Logitech); we may earn a commission at no cost to you. <a href="https://whattheprobefound.visionmediachannels.com/affiliate-disclosure/">Details</a>. As an Amazon Associate we earn from qualifying purchases.</p>
+<p><a href="https://whattheprobefound.visionmediachannels.com/privacy/">Privacy</a> · <a href="https://whattheprobefound.visionmediachannels.com/terms/">Terms</a> · <a href="https://whattheprobefound.visionmediachannels.com/credits/">Credits</a> · <a href="https://whattheprobefound.visionmediachannels.com/affiliate-disclosure/">Affiliate disclosure</a></p>
+</footer>
 </body>
 </html>
